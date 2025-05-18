@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply for a Loan - Crawford Referrals</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <header class="bg-white shadow-md w-full top-0 z-50">
+        <div class="container mx-auto py-4 px-6 flex justify-between items-center">
+            <a href="index.html" class="text-3xl font-bold text-blue-800">Crawford Referrals</a>
+            <nav class="hidden md:block">
+                <a href="index.html" class="text-gray-700 hover:text-blue-600">Home</a>
+                <a href="privacy.html" class="text-gray-700 hover:text-blue-600 ml-4">Privacy</a>
+                <a href="terms.html" class="text-gray-700 hover:text-blue-600 ml-4">Terms of Use</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-blue-800">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200 px-6 py-4">
+            <ul class="space-y-4">
+                <li><a href="index.html" class="block text-gray-700">Home</a></li>
+                <li><a href="privacy.html" class="block text-gray-700">Privacy</a></li>
+                <li><a href="terms.html" class="block text-gray-700">Terms of Use</a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="pt-16">
+        <section class="py-16">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Apply for a Loan</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">Fill out the application form below to start the process. Our team will review your information and connect you with suitable lenders.</p>
+                </div>
+                <div class="flex justify-center">
+                    <!-- Google Form Embed -->
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeYxMJQ8erNemjKoNAlW5-yxuumLb96N8cPJ-RN06_49O9QlQ/viewform?embedded=true" width="100%" height="2320" frameborder="0" marginheight="0" marginwidth="0" class="w-full">Loading…</iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-gray-800 text-white py-8 mt-12">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-400">&copy; 2023 Crawford Referrals. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        // Mobile menu toggle for apply.html
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

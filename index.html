@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crawford Referrals - Personal Loan Referral Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+        section {
+            padding: 40px 0;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #1a56db 0%, #0e38b1 100%);
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        .contact-info i {
+            width: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-white shadow-md fixed w-full top-0 z-50 print:static">
+        <div class="container mx-auto py-4 px-6 flex justify-between items-center">
+            <div class="flex items-center">
+                <h1 class="text-3xl font-bold text-blue-800">Crawford Referrals</h1>
+            </div>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="#home" class="text-gray-700 hover:text-blue-600">Home</a></li>
+                    <li><a href="#services" class="text-gray-700 hover:text-blue-600">Services</a></li>
+                    <li><a href="#about" class="text-gray-700 hover:text-blue-600">About</a></li>
+                    <li><a href="#process" class="text-gray-700 hover:text-blue-600">How It Works</a></li>
+                    <li><a href="#contact" class="text-gray-700 hover:text-blue-600">Contact</a></li>
+                    <li><a href="apply.html" class="text-white bg-blue-600 px-4 py-2 rounded hover:bg-blue-700 transition duration-300">Apply Now</a></li>
+                </ul>
+            </nav>
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-blue-800">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200 px-6 py-4">
+            <ul class="space-y-4">
+                <li><a href="#home" class="block text-gray-700">Home</a></li>
+                <li><a href="#services" class="block text-gray-700">Services</a></li>
+                <li><a href="#about" class="block text-gray-700">About</a></li>
+                <li><a href="#process" class="block text-gray-700">How It Works</a></li>
+                <li><a href="#contact" class="block text-gray-700">Contact</a></li>
+                <li><a href="apply.html" class="block text-white bg-blue-600 px-4 py-2 rounded text-center">Apply Now</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-20 print:pt-0">
+        <!-- Hero Section -->
+        <section id="home" class="hero-gradient text-white py-20">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 mb-10 md:mb-0">
+                        <h2 class="text-4xl md:text-5xl font-bold mb-6">Find the Perfect Personal Loan for Your Needs</h2>
+                        <p class="text-xl mb-8">Crawford Referrals connects you with trusted lenders offering competitive rates and flexible terms.</p>
+                        <a href="apply.html" class="inline-block bg-white text-blue-700 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300">Apply Today</a>
+                    </div>
+                    <div class="md:w-1/2">
+                        <div class="bg-white p-8 rounded-lg shadow-xl">
+                            <h3 class="text-gray-800 text-2xl font-bold mb-4">Quick Loan Estimate</h3>
+                            <p class="text-gray-600 mb-6">See how much you could qualify for with our network of lenders.</p>
+                            <div class="flex justify-between items-center mb-4">
+                                <span class="text-gray-700">$5,000</span>
+                                <span class="text-gray-700">$50,000</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2 mb-6">
+                                <div class="bg-blue-600 h-2 rounded-full w-3/5"></div>
+                            </div>
+                            <a href="apply.html" class="block text-center bg-blue-600 text-white font-semibold py-3 px-6 rounded hover:bg-blue-700 transition duration-300">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-16 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Our Loan Services</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">Crawford Referrals specializes in connecting individuals with the right lenders for their personal financial needs.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="service-card bg-white p-8 rounded-lg shadow-md transition duration-300">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-coins text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Debt Consolidation</h3>
+                        <p class="text-gray-600">Combine multiple debts into a single loan with potentially lower interest rates and simplified monthly payments.</p>
+                    </div>
+                    <div class="service-card bg-white p-8 rounded-lg shadow-md transition duration-300">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-home text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Home Improvement</h3>
+                        <p class="text-gray-600">Finance your home renovation projects with flexible loan options tailored to your budget and timeline.</p>
+                    </div>
+                    <div class="service-card bg-white p-8 rounded-lg shadow-md transition duration-300">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-chart-line text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Credit Building</h3>
+                        <p class="text-gray-600">Access loan options designed to help establish or improve your credit history with responsible borrowing.</p>
+                    </div>
+                    <div class="service-card bg-white p-8 rounded-lg shadow-md transition duration-300">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-graduation-cap text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Education Expenses</h3>
+                        <p class="text-gray-600">Find financing solutions for educational costs, training programs, and other learning opportunities.</p>
+                    </div>
+                    <div class="service-card bg-white p-8 rounded-lg shadow-md transition duration-300">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-car text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Vehicle Financing</h3>
+                        <p class="text-gray-600">Get competitive loan options for purchasing a new or used vehicle, refinancing, or repair costs.</p>
+                    </div>
+                    <div class="service-card bg-white p-8 rounded-lg shadow-md transition duration-300">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-heartbeat text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Medical Expenses</h3>
+                        <p class="text-gray-600">Access funding for medical procedures, treatments, and other healthcare-related costs not covered by insurance.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-16">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 mb-10 md:mb-0">
+                        <h2 class="text-3xl font-bold text-gray-800 mb-6">About Crawford Referrals</h2>
+                        <p class="text-gray-600 mb-6">At Crawford Referrals, we understand that navigating the complex world of personal loans can be overwhelming. That's why we've built a network of trusted lending partners to provide you with options that match your unique financial situation.</p>
+                        <p class="text-gray-600 mb-6">With years of experience in the financial services industry, our team is dedicated to simplifying the loan process and helping you make informed decisions about your borrowing needs.</p>
+                        <div class="flex flex-wrap items-center">
+                            <div class="mr-8 mb-4">
+                                <h4 class="text-2xl font-bold text-blue-600">300+</h4>
+                                <p class="text-gray-600">Loan Products</p>
+                            </div>
+                            <div class="mr-8 mb-4">
+                                <h4 class="text-2xl font-bold text-blue-600">5,000+</h4>
+                                <p class="text-gray-600">Satisfied Clients</p>
+                            </div>
+                            <div class="mb-4">
+                                <h4 class="text-2xl font-bold text-blue-600">10+</h4>
+                                <p class="text-gray-600">Years Experience</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2">
+                        <div class="bg-blue-50 p-8 rounded-lg border border-blue-100">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">Our Commitment</h3>
+                            <ul class="space-y-4">
+                                <li class="flex items-start">
+                                    <span class="text-green-500 mr-3"><i class="fas fa-check-circle text-xl"></i></span>
+                                    <span class="text-gray-700">No obligation referrals to match your specific needs</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-green-500 mr-3"><i class="fas fa-check-circle text-xl"></i></span>
+                                    <span class="text-gray-700">Transparent process with no hidden fees</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-green-500 mr-3"><i class="fas fa-check-circle text-xl"></i></span>
+                                    <span class="text-gray-700">Access to a wide network of reputable lenders</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-green-500 mr-3"><i class="fas fa-check-circle text-xl"></i></span>
+                                    <span class="text-gray-700">Personalized guidance throughout the loan process</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-green-500 mr-3"><i class="fas fa-check-circle text-xl"></i></span>
+                                    <span class="text-gray-700">Fast and efficient service to meet your timeline</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section id="process" class="py-16 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">How It Works</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">Our simple 4-step process makes getting connected to the right loan quick and hassle-free.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <div class="text-center">
+                        <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-600 text-white text-xl font-bold mb-4">1</div>
+                        <h3 class="text-xl font-bold mb-3">Apply Online</h3>
+                        <p class="text-gray-600">Fill out our simple application form with your information and loan requirements.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-600 text-white text-xl font-bold mb-4">2</div>
+                        <h3 class="text-xl font-bold mb-3">Review Options</h3>
+                        <p class="text-gray-600">We'll match you with lenders based on your specific needs and financial profile.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-600 text-white text-xl font-bold mb-4">3</div>
+                        <h3 class="text-xl font-bold mb-3">Select a Loan</h3>
+                        <p class="text-gray-600">Choose the loan offer that best suits your requirements and budget.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-600 text-white text-xl font-bold mb-4">4</div>
+                        <h3 class="text-xl font-bold mb-3">Get Funded</h3>
+                        <p class="text-gray-600">Complete the lender's process and receive your funds, often within days.</p>
+                    </div>
+                </div>
+                <div class="mt-12 text-center">
+                    <a href="apply.html" class="inline-block bg-blue-600 text-white font-semibold py-3 px-8 rounded-lg hover:bg-blue-700 transition duration-300">Start Your Application</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="py-16">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Frequently Asked Questions</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">Find answers to common questions about our loan referral services.</p>
+                </div>
+                <div class="max-w-3xl mx-auto">
+                    <div class="mb-8 bg-white rounded-lg shadow-sm p-6">
+                        <h3 class="text-xl font-bold mb-3 text-gray-800">What types of loans do you offer?</h3>
+                        <p class="text-gray-600">We connect clients with lenders offering personal loans for various purposes including debt consolidation, home improvements, major purchases, and more. Loan amounts typically range from $5,000 to $50,000 depending on qualification.</p>
+                    </div>
+                    <div class="mb-8 bg-white rounded-lg shadow-sm p-6">
+                        <h3 class="text-xl font-bold mb-3 text-gray-800">How does your referral service work?</h3>
+                        <p class="text-gray-600">We collect your information and loan requirements, then match you with lenders in our network who may meet your needs. You'll have the opportunity to review potential offers and choose the one that works best for you.</p>
+                    </div>
+                    <div class="mb-8 bg-white rounded-lg shadow-sm p-6">
+                        <h3 class="text-xl font-bold mb-3 text-gray-800">Is there a fee for your service?</h3>
+                        <p class="text-gray-600">Our loan referral service is free to use. We receive compensation from our lending partners when you successfully secure a loan through our referrals.</p>
+                    </div>
+                    <div class="mb-8 bg-white rounded-lg shadow-sm p-6">
+                        <h3 class="text-xl font-bold mb-3 text-gray-800">What credit score do I need to qualify?</h3>
+                        <p class="text-gray-600">Our network includes lenders with various credit requirements. While some lenders may require good to excellent credit scores, others specialize in working with borrowers with fair or rebuilding credit.</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-sm p-6">
+                        <h3 class="text-xl font-bold mb-3 text-gray-800">How long does the process take?</h3>
+                        <p class="text-gray-600">After submitting your application, you can typically expect to receive potential matches within 1-2 business days. Once you select a lender and complete their requirements, funding can often be completed within 3-7 business days.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Contact Us</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">Have questions? Our team is here to help. Reach out to us using the information below.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <h3 class="text-xl font-bold mb-4 text-gray-800">Visit Our Office</h3>
+                        <div class="contact-info">
+                            <p class="text-gray-600 mb-2">Crawford Referrals</p>
+                            <p class="text-gray-600 mb-2">3 Gateway Ctr Unit 3</p>
+                            <p class="text-gray-600 mb-6">Newark, NJ 07102</p>
+                            <p class="text-gray-600 mb-2"><i class="far fa-clock mr-2"></i> Mon-Fri: 9am - 5pm</p>
+                            <p class="text-gray-600"><i class="far fa-clock mr-2"></i> Sat-Sun: Closed</p>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <h3 class="text-xl font-bold mb-4 text-gray-800">Contact Information</h3>
+                        <div class="contact-info">
+                            <p class="text-gray-600 mb-3"><i class="fas fa-envelope mr-2 text-blue-600"></i> info@crawfordreferrals.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Crawford Referrals</h3>
+                    <p class="text-gray-300 max-w-xs">Connecting you with trusted lenders for personal loans that meet your unique financial needs.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-300 hover:text-white">Home</a></li>
+                        <li><a href="#services" class="text-gray-300 hover:text-white">Services</a></li>
+                        <li><a href="#about" class="text-gray-300 hover:text-white">About Us</a></li>
+                        <li><a href="#process" class="text-gray-300 hover:text-white">How It Works</a></li>
+                        <li><a href="#contact" class="text-gray-300 hover:text-white">Contact</a></li>
+                        <li><a href="apply.html" class="text-gray-300 hover:text-white">Apply Now</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white">Debt Consolidation</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Home Improvement</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Major Purchases</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Credit Building</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Medical Expenses</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mr-2 mt-1 text-blue-400"></i>
+                            <span>3 Gateway Ctr Unit 3<br>Newark, NJ 07102</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2 text-blue-400"></i>
+                            <span>info@crawfordreferrals.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-gray-700 mb-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">&copy; 2023 Crawford Referrals. All rights reserved.</p>
+            </div>
+            <div class="mt-8 text-center text-gray-500 text-sm">
+                <p>This is a loan referral service. Crawford Referrals is not a lender and does not make loan or credit decisions.</p>
+                <p class="mt-2">Crawford Referrals connects borrowers with lenders. Loan amounts, rates, and terms are determined by each lender.</p>
+                <div class="mt-4">
+                    <a href="terms.html" class="text-gray-500 hover:text-gray-400 mx-3">Terms of Use</a>
+                    <a href="privacy.html" class="text-gray-500 hover:text-gray-400 mx-3">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (mobileMenu.classList.contains('hidden')) {
+                mobileMenu.classList.remove('hidden');
+            } else {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if it's open
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
